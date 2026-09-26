@@ -156,11 +156,62 @@
     rebuildLightboxList();
   }
 
+  /* ---- 5. Design: zoom covers + spreads -------------------------------- */
+  /* Clicking a cover or spread opens the lightbox; arrows step through    */
+  /* the images of that publication only.                                  */
+  function initPubZoom() {
+    var pubs = Array.prototype.slice.call(document.querySelectorAll(".pub"));
+    var lb = document.querySelector(".lb");
+    if (!pubs.length || !lb) return;
+
+    var lbImg   = lb.querySelector(".lbimg");
+    var lbNo    = lb.querySelector("[data-lb-no]");
+    var lbTitle = lb.querySelector("[data-lb-title]");
+    var lbCat   = lb.querySelector("[data-lb-cat]");
+    var imgs = [], title = "", cur = 0;
+
+    function show(k) {
+      if (!imgs.length) return;
+      cur = (k + imgs.length) % imgs.length;
+      var img = imgs[cur];
+      lbImg.style.backgroundImage = "url(" + img.getAttribute("src") + ")";
+      if (lbNo)    lbNo.textContent = img.closest(".pub-cover") ? "COVER" : "SPREAD " + String(cur).padStart(2, "0");
+      if (lbTitle) lbTitle.textContent = title;
+      if (lbCat)   lbCat.textContent = String(cur + 1) + " / " + imgs.length;
+    }
+    function close() { lb.classList.remove("open"); }
+
+    pubs.forEach(function (pub) {
+      pub.addEventListener("click", function (e) {
+        var img = e.target.closest(".pub-cover img, .spread img");
+        if (!img) return;
+        imgs = Array.prototype.slice.call(pub.querySelectorAll(".pub-cover img, .spread img"));
+        var heading = pub.querySelector(".fB");
+        title = heading ? heading.textContent : "";
+        show(imgs.indexOf(img));
+        lb.classList.add("open");
+      });
+    });
+
+    lb.querySelector(".lbx").addEventListener("click", close);
+    lb.querySelector(".lbnav.next").addEventListener("click", function () { show(cur + 1); });
+    lb.querySelector(".lbnav.prev").addEventListener("click", function () { show(cur - 1); });
+    lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+
+    document.addEventListener("keydown", function (e) {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") close();
+      else if (e.key === "ArrowRight") show(cur + 1);
+      else if (e.key === "ArrowLeft") show(cur - 1);
+    });
+  }
+
   /* ---- boot ------------------------------------------------------------ */
   document.addEventListener("DOMContentLoaded", function () {
     initNav();
     initTypewriter();
     initCarousel();
     initWork();
+    initPubZoom();
   });
 })();
