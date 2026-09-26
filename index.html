@@ -1,175 +1,457 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JOBRO Photo Design — Photographer + Designer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800;900&family=Oswald:wght@500;700&family=DM+Serif+Display&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<div class="page">
-<div class="wrap">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JOBRO Photo Design — Photographer + Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800;900&family=Oswald:wght@500;700&family=DM+Serif+Display&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrap">
+        <!-- ======================= NAV ======================= -->
+        <header class="site-nav">
+          <a class="nav-logo" href="index.html" aria-label="JOBRO home">
+            <svg viewBox="0 0 627 494.7">
+              <path
+                d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"
+              ></path>
+              <polygon
+                points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"
+              ></polygon>
+            </svg>
+          </a>
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+          </button>
+          <nav class="nav-links" id="navLinks">
+            <a class="nswipe" href="work.html">WORK</a>
+            <a class="nswipe" href="about.html">ABOUT</a>
+            <a class="nswipe" href="design.html">DESIGN</a>
+            <a class="nswipe" href="contact.html">CONTACT</a>
+          </nav>
+        </header>
 
-  <!-- ======================= NAV ======================= -->
-  <header class="site-nav">
-    <a class="nav-logo" href="index.html" aria-label="JOBRO home">
-      <svg viewBox="0 0 627 494.7"><path d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"></path><polygon points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"></polygon></svg>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
-    <nav class="nav-links" id="navLinks">
-      <a class="nswipe" href="work.html">WORK</a>
-      <a class="nswipe" href="about.html">ABOUT</a>
-      <a class="nswipe" href="design.html">DESIGN</a>
-      <a class="nswipe" href="contact.html">CONTACT</a>
-    </nav>
-  </header>
+        <!-- ======================= HERO ======================= -->
+        <section class="home-hero">
+          <div class="home-hero-copy">
+            <span class="lbl pk">JOBRO PHOTO DESIGN — EST. 2026</span>
+            <span class="fA display" style="margin-top: 8px">JOBRO</span>
+            <span class="fB display-sm">PHOTO</span>
+            <span class="fB h-md pk" style="margin: 12px 0 14px"
+              ><span
+                class="type-line"
+                data-words="PHOTOGRAPHY|GRAPHIC DESIGN|WEB DESIGN|WEB DEVELOPMENT"
+              ></span
+              ><span class="tw-cursor">▍</span></span
+            >
+            <span class="fA ghost" style="font-size: clamp(38px, 9vw, 74px)"
+              >DESIGN</span
+            >
+            <span class="lbl" style="margin-top: 14px"
+              >PRODUCT · PORTRAIT · BRAND · WEB · DEV</span
+            >
+          </div>
 
-  <!-- ======================= HERO ======================= -->
-  <section class="home-hero">
-    <div class="home-hero-copy">
-      <span class="lbl pk">JOBRO PHOTO DESIGN — EST. 2026</span>
-      <span class="fA display" style="margin-top:8px">JOBRO</span>
-      <span class="fB display-sm">PHOTO</span>
-      <span class="fB h-md pk" style="margin:12px 0 14px"><span class="type-line" data-words="PHOTOGRAPHY|GRAPHIC DESIGN|WEB DESIGN|WEB DEVELOPMENT"></span><span class="tw-cursor">▍</span></span>
-      <span class="fA ghost" style="font-size:clamp(38px,9vw,74px)">DESIGN</span>
-      <span class="lbl" style="margin-top:14px">PRODUCT · PORTRAIT · BRAND · WEB · DEV</span>
-    </div>
+          <div class="divider bcv"></div>
 
-    <div class="divider bcv"></div>
-
-    <!-- Carousel -->
-    <div class="carousel-wrap" style="height:430px;position:relative">
-      <div class="carousel" data-carousel data-interval="4.5">
-        <div class="carousel-stage">
-          <div class="carousel-track">
-            <!-- Slide 1 -->
-            <div class="carousel-slide">
-              <div class="img" style="background-image:url('assets/images/photography/denim-duotone-portrait.jpg');background-position:center 30%"></div>
-              <div class="scrim"></div>
-              <div class="carousel-topbar">
-                <div><div class="bar bc"></div><div class="lbl" style="font-size:7px;color:var(--ink);margin-top:4px">JOBRO PHOTO DESIGN</div></div>
-                <div class="lbl" style="font-size:9px;color:var(--ink)">01 <span style="color:var(--dim)">/ 04</span></div>
+          <!-- Carousel -->
+          <div class="carousel-wrap">
+            <div class="carousel" data-carousel data-interval="4.5">
+              <div class="carousel-stage">
+                <div class="carousel-track">
+                  <!-- Slide 1 -->
+                  <div class="carousel-slide">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(&quot;assets/images/photography/denim-duotone-portrait.jpg&quot;);
+                        background-position: center 30%;
+                      "
+                    ></div>
+                    <div class="scrim"></div>
+                    <div class="carousel-topbar">
+                      <div>
+                        <div class="bar bc"></div>
+                        <div
+                          class="lbl"
+                          style="
+                            font-size: 7px;
+                            color: var(--ink);
+                            margin-top: 4px;
+                          "
+                        >
+                          JOBRO PHOTO DESIGN
+                        </div>
+                      </div>
+                      <div
+                        class="lbl"
+                        style="font-size: 9px; color: var(--ink)"
+                      >
+                        01 <span style="color: var(--dim)">/ 04</span>
+                      </div>
+                    </div>
+                    <div class="carousel-cap">
+                      <div class="dtag">01 · CAPTURE</div>
+                      <div
+                        class="fB"
+                        style="
+                          font-size: 32px;
+                          color: var(--ink);
+                          margin-top: 6px;
+                        "
+                      >
+                        PHOTOGRAPHY
+                      </div>
+                      <div class="foot">
+                        <span
+                          class="lbl"
+                          style="font-size: 8.5px; color: var(--ink)"
+                          >PORTRAIT · PRODUCT</span
+                        ><span class="lbl pk" style="font-size: 8.5px"
+                          >FIG.01</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 2 -->
+                  <div class="carousel-slide">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(&quot;assets/images/design/missing-album-cover.jpg&quot;);
+                        background-position: center;
+                      "
+                    ></div>
+                    <div class="scrim"></div>
+                    <div class="carousel-topbar">
+                      <div>
+                        <div class="bar bc"></div>
+                        <div
+                          class="lbl"
+                          style="
+                            font-size: 7px;
+                            color: var(--ink);
+                            margin-top: 4px;
+                          "
+                        >
+                          JOBRO PHOTO DESIGN
+                        </div>
+                      </div>
+                      <div
+                        class="lbl"
+                        style="font-size: 9px; color: var(--ink)"
+                      >
+                        02 <span style="color: var(--dim)">/ 04</span>
+                      </div>
+                    </div>
+                    <div class="carousel-cap">
+                      <div class="dtag">02 · IDENTITY</div>
+                      <div
+                        class="fB"
+                        style="
+                          font-size: 32px;
+                          color: var(--ink);
+                          margin-top: 6px;
+                        "
+                      >
+                        BRAND DESIGN
+                      </div>
+                      <div class="foot">
+                        <span
+                          class="lbl"
+                          style="font-size: 8.5px; color: var(--ink)"
+                          >ALBUM ART · LOGO</span
+                        ><span class="lbl pk" style="font-size: 8.5px"
+                          >FIG.02</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 3 -->
+                  <div class="carousel-slide">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(&quot;assets/images/design/tokyo-poster.jpg&quot;);
+                        background-position: center top;
+                      "
+                    ></div>
+                    <div class="scrim"></div>
+                    <div class="carousel-topbar">
+                      <div>
+                        <div class="bar bc"></div>
+                        <div
+                          class="lbl"
+                          style="
+                            font-size: 7px;
+                            color: var(--ink);
+                            margin-top: 4px;
+                          "
+                        >
+                          JOBRO PHOTO DESIGN
+                        </div>
+                      </div>
+                      <div
+                        class="lbl"
+                        style="font-size: 9px; color: var(--ink)"
+                      >
+                        03 <span style="color: var(--dim)">/ 04</span>
+                      </div>
+                    </div>
+                    <div class="carousel-cap">
+                      <div class="dtag">03 · LAYOUT</div>
+                      <div
+                        class="fB"
+                        style="
+                          font-size: 32px;
+                          color: var(--ink);
+                          margin-top: 6px;
+                        "
+                      >
+                        GRAPHIC DESIGN
+                      </div>
+                      <div class="foot">
+                        <span
+                          class="lbl"
+                          style="font-size: 8.5px; color: var(--ink)"
+                          >POSTER · PRINT</span
+                        ><span class="lbl pk" style="font-size: 8.5px"
+                          >FIG.03</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slide 4 -->
+                  <div class="carousel-slide">
+                    <div
+                      class="img"
+                      style="
+                        background-image: url(&quot;assets/images/web/umbrella-corp-screenshot.png&quot;);
+                        background-position: center top;
+                      "
+                    ></div>
+                    <div class="scrim"></div>
+                    <div class="carousel-topbar">
+                      <div>
+                        <div class="bar bc"></div>
+                        <div
+                          class="lbl"
+                          style="
+                            font-size: 7px;
+                            color: var(--ink);
+                            margin-top: 4px;
+                          "
+                        >
+                          JOBRO PHOTO DESIGN
+                        </div>
+                      </div>
+                      <div
+                        class="lbl"
+                        style="font-size: 9px; color: var(--ink)"
+                      >
+                        04 <span style="color: var(--dim)">/ 04</span>
+                      </div>
+                    </div>
+                    <div class="carousel-cap">
+                      <div class="dtag">04 · BUILD</div>
+                      <div
+                        class="fB"
+                        style="
+                          font-size: 32px;
+                          color: var(--ink);
+                          margin-top: 6px;
+                        "
+                      >
+                        WEB DESIGN
+                      </div>
+                      <div class="foot">
+                        <span
+                          class="lbl"
+                          style="font-size: 8.5px; color: var(--ink)"
+                          >SITES · UI</span
+                        ><span class="lbl pk" style="font-size: 8.5px"
+                          >FIG.04</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="carousel-cap">
-                <div class="dtag">01 · CAPTURE</div>
-                <div class="fB" style="font-size:32px;color:var(--ink);margin-top:6px">PHOTOGRAPHY</div>
-                <div class="foot"><span class="lbl" style="font-size:8.5px;color:var(--ink)">PORTRAIT · PRODUCT</span><span class="lbl pk" style="font-size:8.5px">FIG.01</span></div>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-              <div class="img" style="background-image:url('assets/images/design/missing-album-cover.jpg');background-position:center"></div>
-              <div class="scrim"></div>
-              <div class="carousel-topbar">
-                <div><div class="bar bc"></div><div class="lbl" style="font-size:7px;color:var(--ink);margin-top:4px">JOBRO PHOTO DESIGN</div></div>
-                <div class="lbl" style="font-size:9px;color:var(--ink)">02 <span style="color:var(--dim)">/ 04</span></div>
-              </div>
-              <div class="carousel-cap">
-                <div class="dtag">02 · IDENTITY</div>
-                <div class="fB" style="font-size:32px;color:var(--ink);margin-top:6px">BRAND DESIGN</div>
-                <div class="foot"><span class="lbl" style="font-size:8.5px;color:var(--ink)">ALBUM ART · LOGO</span><span class="lbl pk" style="font-size:8.5px">FIG.02</span></div>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-              <div class="img" style="background-image:url('assets/images/design/tokyo-poster.jpg');background-position:center top"></div>
-              <div class="scrim"></div>
-              <div class="carousel-topbar">
-                <div><div class="bar bc"></div><div class="lbl" style="font-size:7px;color:var(--ink);margin-top:4px">JOBRO PHOTO DESIGN</div></div>
-                <div class="lbl" style="font-size:9px;color:var(--ink)">03 <span style="color:var(--dim)">/ 04</span></div>
-              </div>
-              <div class="carousel-cap">
-                <div class="dtag">03 · LAYOUT</div>
-                <div class="fB" style="font-size:32px;color:var(--ink);margin-top:6px">GRAPHIC DESIGN</div>
-                <div class="foot"><span class="lbl" style="font-size:8.5px;color:var(--ink)">POSTER · PRINT</span><span class="lbl pk" style="font-size:8.5px">FIG.03</span></div>
-              </div>
-            </div>
-            <!-- Slide 4 -->
-            <div class="carousel-slide">
-              <div class="img" style="background-image:url('assets/images/web/umbrella-corp-screenshot.png');background-position:center top"></div>
-              <div class="scrim"></div>
-              <div class="carousel-topbar">
-                <div><div class="bar bc"></div><div class="lbl" style="font-size:7px;color:var(--ink);margin-top:4px">JOBRO PHOTO DESIGN</div></div>
-                <div class="lbl" style="font-size:9px;color:var(--ink)">04 <span style="color:var(--dim)">/ 04</span></div>
-              </div>
-              <div class="carousel-cap">
-                <div class="dtag">04 · BUILD</div>
-                <div class="fB" style="font-size:32px;color:var(--ink);margin-top:6px">WEB DESIGN</div>
-                <div class="foot"><span class="lbl" style="font-size:8.5px;color:var(--ink)">SITES · UI</span><span class="lbl pk" style="font-size:8.5px">FIG.04</span></div>
+              <div class="carousel-ctrl">
+                <div class="nav prev">◄</div>
+                <div class="carousel-prog">
+                  <div class="seg"><div class="fill"></div></div>
+                  <div class="seg"><div class="fill"></div></div>
+                  <div class="seg"><div class="fill"></div></div>
+                  <div class="seg"><div class="fill"></div></div>
+                </div>
+                <div class="nav next">►</div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-ctrl">
-          <div class="nav prev">◄</div>
-          <div class="carousel-prog">
-            <div class="seg"><div class="fill"></div></div>
-            <div class="seg"><div class="fill"></div></div>
-            <div class="seg"><div class="fill"></div></div>
-            <div class="seg"><div class="fill"></div></div>
+        </section>
+
+        <!-- ============== SIGNATURE INSTRUMENT STRIP ============== -->
+        <div class="instrument">
+          <div style="flex: none">
+            <svg
+              width="42"
+              height="42"
+              viewBox="0 0 60 60"
+              fill="none"
+              stroke="var(--ink)"
+              stroke-width="1"
+            >
+              <circle cx="30" cy="30" r="26"></circle>
+              <ellipse cx="30" cy="30" rx="26" ry="10"></ellipse>
+              <ellipse cx="30" cy="30" rx="10" ry="26"></ellipse>
+              <ellipse
+                cx="30"
+                cy="30"
+                rx="22"
+                ry="26"
+                transform="rotate(38 30 30)"
+              ></ellipse>
+            </svg>
           </div>
-          <div class="nav next">►</div>
+          <div style="flex: none">
+            <svg
+              width="56"
+              height="42"
+              viewBox="0 0 80 60"
+              fill="none"
+              stroke="var(--ink)"
+              stroke-width="1"
+            >
+              <rect x="2" y="2" width="76" height="56"></rect>
+              <rect x="15" y="11" width="50" height="38"></rect>
+              <rect x="28" y="21" width="24" height="18"></rect>
+              <rect x="37" y="27" width="6" height="6"></rect>
+              <path d="M2 2 37 27M78 2 43 27M2 58 37 33M78 58 43 33"></path>
+            </svg>
+          </div>
+          <div style="flex: 1; justify-content: center; min-width: 0">
+            <svg
+              width="60%"
+              height="22"
+              viewBox="0 0 240 22"
+              preserveAspectRatio="none"
+              fill="none"
+              stroke="var(--ink)"
+              stroke-width="1.6"
+            >
+              <path
+                d="M4 11q10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0"
+              ></path>
+            </svg>
+          </div>
+          <div
+            style="
+              flex: none;
+              flex-direction: column;
+              justify-content: center;
+              border-right: none;
+            "
+          >
+            <span class="lbl pk">SYS / 2026</span>
+            <div
+              class="bc"
+              style="width: 76px; height: 20px; margin-top: 6px"
+            ></div>
+          </div>
         </div>
+
+        <!-- ============== ABOUT + DESIGN/DEV CARDS ============== -->
+        <div class="info-grid">
+          <div class="info-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                margin-bottom: 14px;
+              "
+            >
+              <svg width="14" height="14" viewBox="0 0 40 40" fill="var(--pk)">
+                <path
+                  d="M20 1c1.5 11 8 17.5 19 19-11 1.5-17.5 8-19 19-1.5-11-8-17.5-19-19 11-1.5 17.5-8 19-19Z"
+                ></path>
+              </svg>
+              <div class="fA" style="font-size: 42px">ABOUT</div>
+            </div>
+            <p>
+              Photographer and designer based in
+              <span class="pk">New Hampshire</span>. Five years shooting
+              product, portrait, and brand work, with a BA in Graphic Design
+              &amp; Web Design from SNHU. Self-taught behind the camera,
+              formally trained at the desk — one person running the whole
+              pipeline, from image to identity to live site.
+            </p>
+          </div>
+          <div class="info-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 9px;
+                margin-bottom: 14px;
+              "
+            >
+              <svg width="14" height="14" viewBox="0 0 40 40" fill="var(--pk)">
+                <path
+                  d="M20 1c1.5 11 8 17.5 19 19-11 1.5-17.5 8-19 19-1.5-11-8-17.5-19-19 11-1.5 17.5-8 19-19Z"
+                ></path>
+              </svg>
+              <div class="fA" style="font-size: 42px">
+                DESIGN<span class="pk">+</span>DEV
+              </div>
+            </div>
+            <p style="margin-bottom: 14px">
+              Brand identity, logo systems, and website design. Because the
+              photography comes from the same hands, every project ships as one
+              consistent look — from the shoot to the layout that carries it.
+            </p>
+            <div class="lbl">→ LOGO &nbsp; → BRAND &nbsp; → WEBSITES</div>
+          </div>
+        </div>
+
+        <!-- ======================= FOOTER ======================= -->
+        <footer class="site-footer">
+          <svg viewBox="0 0 627 494.7">
+            <path
+              d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"
+            ></path>
+            <polygon
+              points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"
+            ></polygon>
+          </svg>
+          <div class="fB" style="font-size: 30px">LET'S WORK TOGETHER</div>
+          <a
+            href="mailto:jobrophotodesign@gmail.com"
+            class="lbl pk"
+            style="font-size: 12px"
+            >JOBROPHOTODESIGN@GMAIL.COM</a
+          >
+          <div class="social">
+            <a class="swipe" href="#">INSTAGRAM</a>
+            <a class="swipe" href="#">GITHUB</a>
+            <a class="swipe" href="#">LINKEDIN</a>
+            <a class="swipe" href="#">DRIBBBLE</a>
+            <a class="swipe" href="#">X / TWITTER</a>
+          </div>
+          <span class="copyright"
+            >© 2026 JOBRO PHOTO DESIGN — ALL RIGHTS RESERVED</span
+          >
+        </footer>
       </div>
     </div>
-  </section>
-
-  <!-- ============== SIGNATURE INSTRUMENT STRIP ============== -->
-  <div class="instrument">
-    <div style="flex:none">
-      <svg width="42" height="42" viewBox="0 0 60 60" fill="none" stroke="var(--ink)" stroke-width="1"><circle cx="30" cy="30" r="26"></circle><ellipse cx="30" cy="30" rx="26" ry="10"></ellipse><ellipse cx="30" cy="30" rx="10" ry="26"></ellipse><ellipse cx="30" cy="30" rx="22" ry="26" transform="rotate(38 30 30)"></ellipse></svg>
-    </div>
-    <div style="flex:none">
-      <svg width="56" height="42" viewBox="0 0 80 60" fill="none" stroke="var(--ink)" stroke-width="1"><rect x="2" y="2" width="76" height="56"></rect><rect x="15" y="11" width="50" height="38"></rect><rect x="28" y="21" width="24" height="18"></rect><rect x="37" y="27" width="6" height="6"></rect><path d="M2 2 37 27M78 2 43 27M2 58 37 33M78 58 43 33"></path></svg>
-    </div>
-    <div style="flex:1;justify-content:center;min-width:0">
-      <svg width="60%" height="22" viewBox="0 0 240 22" preserveAspectRatio="none" fill="none" stroke="var(--ink)" stroke-width="1.6"><path d="M4 11q10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0 10 12 20 0 10-12 20 0"></path></svg>
-    </div>
-    <div style="flex:none;flex-direction:column;justify-content:center;border-right:none">
-      <span class="lbl pk">SYS / 2026</span>
-      <div class="bc" style="width:76px;height:20px;margin-top:6px"></div>
-    </div>
-  </div>
-
-  <!-- ============== ABOUT + DESIGN/DEV CARDS ============== -->
-  <div class="info-grid">
-    <div class="info-card">
-      <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
-        <svg width="14" height="14" viewBox="0 0 40 40" fill="var(--pk)"><path d="M20 1c1.5 11 8 17.5 19 19-11 1.5-17.5 8-19 19-1.5-11-8-17.5-19-19 11-1.5 17.5-8 19-19Z"></path></svg>
-        <div class="fA" style="font-size:42px">ABOUT</div>
-      </div>
-      <p>Photographer and designer based in <span class="pk">New Hampshire</span>. Five years shooting product, portrait, and brand work, with a BA in Graphic Design &amp; Web Design from SNHU. Self-taught behind the camera, formally trained at the desk — one person running the whole pipeline, from image to identity to live site.</p>
-    </div>
-    <div class="info-card">
-      <div style="display:flex;align-items:center;gap:9px;margin-bottom:14px">
-        <svg width="14" height="14" viewBox="0 0 40 40" fill="var(--pk)"><path d="M20 1c1.5 11 8 17.5 19 19-11 1.5-17.5 8-19 19-1.5-11-8-17.5-19-19 11-1.5 17.5-8 19-19Z"></path></svg>
-        <div class="fA" style="font-size:42px">DESIGN<span class="pk">+</span>DEV</div>
-      </div>
-      <p style="margin-bottom:14px">Brand identity, logo systems, and website design. Because the photography comes from the same hands, every project ships as one consistent look — from the shoot to the layout that carries it.</p>
-      <div class="lbl">→ LOGO &nbsp; → BRAND &nbsp; → WEBSITES</div>
-    </div>
-  </div>
-
-  <!-- ======================= FOOTER ======================= -->
-  <footer class="site-footer">
-    <svg viewBox="0 0 627 494.7"><path d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"></path><polygon points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"></polygon></svg>
-    <div class="fB" style="font-size:30px">LET'S WORK TOGETHER</div>
-    <a href="mailto:jobrophotodesign@gmail.com" class="lbl pk" style="font-size:12px">JOBROPHOTODESIGN@GMAIL.COM</a>
-    <div class="social">
-      <a class="swipe" href="#">INSTAGRAM</a>
-      <a class="swipe" href="#">GITHUB</a>
-      <a class="swipe" href="#">LINKEDIN</a>
-      <a class="swipe" href="#">DRIBBBLE</a>
-      <a class="swipe" href="#">X / TWITTER</a>
-    </div>
-    <span class="copyright">© 2026 JOBRO PHOTO DESIGN — ALL RIGHTS RESERVED</span>
-  </footer>
-
-</div>
-</div>
-<script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
