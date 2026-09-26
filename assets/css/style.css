@@ -724,6 +724,10 @@ a:hover {
 .cell.hidden {
   display: none;
 }
+/* Full-width row that spans all grid columns, margin to margin */
+.cell.full {
+  column-span: all;
+}
 /* Button under a tile that links to a project page (e.g. SPAN) */
 .cell-link {
   display: block;
@@ -927,6 +931,22 @@ a:hover {
 }
 .bio .ph {
   height: 400px;
+}
+/* Real photo in the bio frame; keeps the .ph labels on top */
+.bio-photo {
+  overflow: hidden;
+}
+.bio-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.bio-photo > b,
+.bio-photo > i {
+  z-index: 1;
+  background: var(--bg);
+  padding: 0 3px;
 }
 .bio-copy {
   display: flex;
