@@ -1168,6 +1168,10 @@ a:hover {
   border-color: var(--pk);
   color: var(--pk);
 }
+/* Keep text dark over the green swipe fill (overrides .btn-lg.pk color) */
+.btn-lg.pk.swipe:hover {
+  color: #0d0d0d;
+}
 .irow {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1226,6 +1230,58 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* SPAN case study: numbered rows, label column + body copy */
+.case-study {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+}
+.case-row {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+  padding: 22px 20px;
+  border-top: 1px solid var(--line);
+  transition: background 0.3s;
+}
+.case-row:first-child {
+  border-top: none;
+}
+.case-row:hover {
+  background: rgba(233, 228, 216, 0.03);
+}
+.case-row:hover .case-title {
+  color: var(--pk);
+}
+.case-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.case-title {
+  font-size: 30px;
+  line-height: 1;
+  transition: color 0.3s;
+}
+.case-row p {
+  font:
+    400 11.5px/1.8 "Space Mono",
+    monospace;
+  color: var(--dim);
+  margin: 0;
+}
+.case-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid var(--line);
+}
+@media (max-width: 720px) {
+  .case-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 .soon-grid {
   display: grid;

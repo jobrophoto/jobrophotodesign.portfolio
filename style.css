@@ -1046,6 +1046,40 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
+.case-study {
+  margin-top: 40px;
+}
+.case-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+.case-row h4 {
+  font:
+    700 9px "Space Mono",
+    monospace;
+  letter-spacing: 0.14em;
+  color: var(--pk);
+  margin: 0;
+}
+.case-row p {
+  font:
+    400 12px/1.8 "Space Mono",
+    monospace;
+  color: var(--dim);
+  margin: 0 0 10px;
+}
+.case-row p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 720px) {
+  .case-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
 .spread {
   border: 1px solid var(--line);
   background: #0d0d0d;
