@@ -724,6 +724,12 @@ a:hover {
 .cell.hidden {
   display: none;
 }
+/* Button under a tile that links to a project page (e.g. SPAN) */
+.cell-link {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+}
 .tile {
   position: relative;
   overflow: hidden;

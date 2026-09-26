@@ -1,132 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Design — JOBRO Photo Design</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800;900&family=Oswald:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/images/icons/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="assets/images/icons/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-<div class="page">
-<div class="wrap">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Design — JOBRO Photo Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@800;900&family=Oswald:wght@500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="icon"
+      href="assets/images/icons/favicon-32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/icons/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrap">
+        <!-- NAV -->
+        <header class="site-nav">
+          <a class="nav-logo" href="index.html" aria-label="JOBRO home">
+            <svg viewBox="0 0 627 494.7">
+              <path
+                d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"
+              ></path>
+              <polygon
+                points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"
+              ></polygon>
+            </svg>
+          </a>
+          <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span>
+          </button>
+          <nav class="nav-links" id="navLinks">
+            <a class="nswipe" href="work.html">WORK</a>
+            <a class="nswipe" href="about.html">ABOUT</a>
+            <a class="nswipe active" href="design.html">DESIGN</a>
+            <a class="nswipe" href="contact.html">CONTACT</a>
+          </nav>
+        </header>
 
-  <!-- NAV -->
-  <header class="site-nav">
-    <a class="nav-logo" href="index.html" aria-label="JOBRO home">
-      <svg viewBox="0 0 627 494.7"><path d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"></path><polygon points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"></polygon></svg>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu"><span></span></button>
-    <nav class="nav-links" id="navLinks">
-      <a class="nswipe" href="work.html">WORK</a>
-      <a class="nswipe" href="about.html">ABOUT</a>
-      <a class="nswipe active" href="design.html">DESIGN</a>
-      <a class="nswipe" href="contact.html">CONTACT</a>
-    </nav>
-  </header>
+        <!-- HERO -->
+        <section class="hero">
+          <div>
+            <span class="lbl pk"
+              >PUBLICATIONS · EPUB &amp; EDITORIAL LAYOUT</span
+            >
+            <div class="fA display" style="margin-top: 8px">
+              DESIGN<br /><span class="ghost">IN PRINT</span>
+            </div>
+          </div>
+          <p class="hero-intro">
+            Digital books and editorial spreads — typeset, laid out, and
+            packaged as finished publications. Covers and selected spreads from
+            each below.
+          </p>
+        </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <span class="lbl pk">PUBLICATIONS · EPUB &amp; EDITORIAL LAYOUT</span>
-      <div class="fA display" style="margin-top:8px">DESIGN<br><span class="ghost">IN PRINT</span></div>
-    </div>
-    <p class="hero-intro">Digital books and editorial spreads — typeset, laid out, and packaged as finished publications. Covers and selected spreads from each below.</p>
-  </section>
+        <!-- EPUB SECTION -->
+        <div class="strip">
+          <span class="lbl pk">EPUB PUBLICATIONS</span>
+          <div class="bc"></div>
+          <span class="lbl">02 TITLES</span>
+        </div>
 
-  <!-- EPUB SECTION -->
-  <div class="strip">
-    <span class="lbl pk">EPUB PUBLICATIONS</span>
-    <div class="bc"></div>
-    <span class="lbl">02 TITLES</span>
-  </div>
-
-  <!-- To fill a slot: replace the .ph placeholder with <img src="assets/images/design/your-file.jpg" alt="...">
+        <!-- To fill a slot: replace the .ph placeholder with <img src="assets/images/design/your-file.jpg" alt="...">
        Update the title, description, and the download link (href). -->
-  <div style="display:flex;flex-direction:column;gap:18px;margin-top:18px">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            margin-top: 18px;
+          "
+        >
+          <div class="pub">
+            <div class="slot pub-cover" style="aspect-ratio: 612/792">
+              <img
+                src="assets/images/design/rangefinder-concept-cover.jpg"
+                alt="Cover of a concept Rangefinder issue: black-and-white portrait of a woman in round sunglasses under a LIGHTING headline"
+              />
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <div>
+                <span class="lbl pk">FIG.01 · SCHOOL PROJECT · SNHU 2022</span>
+                <div class="fB" style="font-size: 30px; margin-top: 8px">
+                  RANGEFINDER — LIGHTING ISSUE
+                </div>
+                <p>
+                  A six-page interactive EPUB built in InDesign: a concept May
+                  2022 issue of Rangefinder on portrait lighting. I designed the
+                  layout, typography, and interactions, including animated
+                  contents, image slideshows, embedded video, and page
+                  navigation.
+                </p>
+                <p>
+                  Unofficial student concept, not affiliated with or endorsed by
+                  Rangefinder or PetaPixel. Photography from Unsplash, credited
+                  in the project.
+                </p>
+              </div>
+              <div class="pub-spreads">
+                <div class="spread pair">
+                  <img
+                    src="assets/images/design/rangefinder-concept-spread-1.jpg"
+                    alt="Spread: animated contents page beside the feature opener on portrait lighting mistakes"
+                  />
+                </div>
+                <div class="spread pair">
+                  <img
+                    src="assets/images/design/rangefinder-concept-spread-2.jpg"
+                    alt="Spread: lighting mistakes article with portrait slideshow beside a Learn Portrait Photography page with embedded video"
+                  />
+                </div>
+              </div>
+              <div class="dl-row">
+                <span class="chip">EPUB</span><span class="chip">EDITORIAL</span
+                ><span class="chip">INTERACTIVE</span
+                ><span class="chip">INDESIGN</span>
+              </div>
+            </div>
+          </div>
 
-    <div class="pub">
-      <div class="slot pub-cover" style="aspect-ratio:612/792"><img src="assets/images/design/rangefinder-concept-cover.jpg" alt="Cover of a concept Rangefinder issue: black-and-white portrait of a woman in round sunglasses under a LIGHTING headline"></div>
-      <div style="display:flex;flex-direction:column;gap:14px">
-        <div>
-          <span class="lbl pk">FIG.01 · SCHOOL PROJECT · SNHU 2022</span>
-          <div class="fB" style="font-size:30px;margin-top:8px">RANGEFINDER — LIGHTING ISSUE</div>
-          <p>A six-page interactive EPUB built in InDesign: a concept May 2022 issue of Rangefinder on portrait lighting. I designed the layout, typography, and interactions, including animated contents, image slideshows, embedded video, and page navigation.</p>
-          <p>Unofficial student concept, not affiliated with or endorsed by Rangefinder or PetaPixel. Photography from Unsplash, credited in the project.</p>
+          <div class="pub">
+            <div class="slot pub-cover ph">
+              <b>EPUB 02 — COVER</b><i>FIG.02</i>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <div>
+                <span class="lbl pk">FIG.02 · SCHOOL PROJECT</span>
+                <div class="fB" style="font-size: 30px; margin-top: 8px">
+                  EPUB TITLE TWO
+                </div>
+                <p>
+                  Short description of the book — subject, page count, and what
+                  you designed. Edit this later.
+                </p>
+              </div>
+              <div class="pub-spreads">
+                <div class="spread pair ph"><b>SPREAD</b></div>
+                <div class="spread pair ph"><b>SPREAD</b></div>
+              </div>
+              <div class="dl-row">
+                <a class="btn-pk swipe" href="#" download
+                  >↓ READ / DOWNLOAD EPUB</a
+                >
+                <span class="chip">EPUB</span
+                ><span class="chip">EDITORIAL</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="pub-spreads">
-          <div class="spread pair"><img src="assets/images/design/rangefinder-concept-spread-1.jpg" alt="Spread: animated contents page beside the feature opener on portrait lighting mistakes"></div>
-          <div class="spread pair"><img src="assets/images/design/rangefinder-concept-spread-2.jpg" alt="Spread: lighting mistakes article with portrait slideshow beside a Learn Portrait Photography page with embedded video"></div>
+
+        <!-- SPREAD WORK -->
+        <div class="strip" style="margin-top: 34px">
+          <span class="lbl pk">SPREAD &amp; LAYOUT WORK</span>
+          <div class="bc"></div>
+          <span class="lbl">SELECTED</span>
         </div>
-        <div class="dl-row">
-          <span class="chip">EPUB</span><span class="chip">EDITORIAL</span><span class="chip">INTERACTIVE</span><span class="chip">INDESIGN</span>
+
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 18px;
+          "
+        >
+          <div class="spread wide ph">
+            <b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b>
+          </div>
+          <div class="spread wide ph">
+            <b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b>
+          </div>
+          <div class="spread wide ph">
+            <b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b>
+          </div>
         </div>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+          <svg viewBox="0 0 627 494.7">
+            <path
+              d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"
+            ></path>
+            <polygon
+              points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"
+            ></polygon>
+          </svg>
+          <div class="fB" style="font-size: 30px">LET'S WORK TOGETHER</div>
+          <a
+            href="mailto:jobrophotodesign@gmail.com"
+            class="lbl pk"
+            style="font-size: 12px"
+            >JOBROPHOTODESIGN@GMAIL.COM</a
+          >
+          <span class="copyright"
+            >© 2026 JOBRO PHOTO DESIGN — ALL RIGHTS RESERVED</span
+          >
+        </footer>
       </div>
     </div>
 
-    <div class="pub">
-      <div class="slot pub-cover ph"><b>EPUB 02 — COVER</b><i>FIG.02</i></div>
-      <div style="display:flex;flex-direction:column;gap:14px">
-        <div>
-          <span class="lbl pk">FIG.02 · SCHOOL PROJECT</span>
-          <div class="fB" style="font-size:30px;margin-top:8px">EPUB TITLE TWO</div>
-          <p>Short description of the book — subject, page count, and what you designed. Edit this later.</p>
-        </div>
-        <div class="pub-spreads">
-          <div class="spread pair ph"><b>SPREAD</b></div>
-          <div class="spread pair ph"><b>SPREAD</b></div>
-        </div>
-        <div class="dl-row">
-          <a class="btn-pk swipe" href="#" download>↓ READ / DOWNLOAD EPUB</a>
-          <span class="chip">EPUB</span><span class="chip">EDITORIAL</span>
-        </div>
+    <!-- LIGHTBOX (hidden until a cover or spread is clicked) -->
+    <div class="lb">
+      <div class="lbimg"></div>
+      <div class="lbmeta">
+        <span class="lbl pk" style="font-size: 11px" data-lb-no></span>
+        <span
+          class="fB"
+          style="font-size: 20px; color: #fff"
+          data-lb-title
+        ></span>
+        <span
+          class="lbl"
+          style="font-size: 10px; color: #cfcabd"
+          data-lb-cat
+        ></span>
       </div>
+      <div class="lbnav prev">◄</div>
+      <div class="lbnav next">►</div>
+      <div class="lbx">✕</div>
     </div>
 
-  </div>
-
-  <!-- SPREAD WORK -->
-  <div class="strip" style="margin-top:34px">
-    <span class="lbl pk">SPREAD &amp; LAYOUT WORK</span>
-    <div class="bc"></div>
-    <span class="lbl">SELECTED</span>
-  </div>
-
-  <div style="display:flex;flex-direction:column;gap:14px;margin-top:18px">
-    <div class="spread wide ph"><b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b></div>
-    <div class="spread wide ph"><b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b></div>
-    <div class="spread wide ph"><b>WIDE SPREAD — DROP A TWO-PAGE LAYOUT</b></div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <svg viewBox="0 0 627 494.7"><path d="M627,181.3l-52.4-52.4h0l-76.3-76.3h0L445.9.2l-132.2,132.2L181.3,0l-52.4,52.4h0L.9,180.4l-.9.9,93.7,93.7,52.4-52.4-41.3-41.3,76.5-76.5,80,80-128.9,128.9,52.4,52.4,128.9-128.9,128.7,128.7,52.4-52.4h0l79.8-79.8h0l52.4-52.4h0ZM442.5,261.2l-76.3-76.4,79.8-79.8,76.3,76.4-79.8,79.8Z"></path><polygon points="349.5 354.1 313.6 390.1 277.6 354.1 225.3 406.4 313.6 494.7 313.8 494.5 313.8 494.5 346.5 461.8 365.9 442.4 365.9 442.4 401.9 406.4 349.5 354.1"></polygon></svg>
-    <div class="fB" style="font-size:30px">LET'S WORK TOGETHER</div>
-    <a href="mailto:jobrophotodesign@gmail.com" class="lbl pk" style="font-size:12px">JOBROPHOTODESIGN@GMAIL.COM</a>
-    <span class="copyright">© 2026 JOBRO PHOTO DESIGN — ALL RIGHTS RESERVED</span>
-  </footer>
-
-</div>
-</div>
-
-<!-- LIGHTBOX (hidden until a cover or spread is clicked) -->
-<div class="lb">
-  <div class="lbimg"></div>
-  <div class="lbmeta">
-    <span class="lbl pk" style="font-size:11px" data-lb-no></span>
-    <span class="fB" style="font-size:20px;color:#fff" data-lb-title></span>
-    <span class="lbl" style="font-size:10px;color:#cfcabd" data-lb-cat></span>
-  </div>
-  <div class="lbnav prev">◄</div>
-  <div class="lbnav next">►</div>
-  <div class="lbx">✕</div>
-</div>
-
-<script src="assets/js/script.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

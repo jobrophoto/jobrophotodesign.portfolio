@@ -111,6 +111,7 @@
     var lbNo    = lb.querySelector("[data-lb-no]");
     var lbTitle = lb.querySelector("[data-lb-title]");
     var lbCat   = lb.querySelector("[data-lb-cat]");
+    var lbLink  = lb.querySelector("[data-lb-link]");   // optional button, shown for tiles with data-link
     var visible = [];   // currently-visible photo tiles, in order
     var cur = 0;
 
@@ -128,6 +129,14 @@
       if (lbNo)    lbNo.textContent = "FIG." + String(cur + 1).padStart(2, "0");
       if (lbTitle) lbTitle.textContent = t.getAttribute("data-title") || "";
       if (lbCat)   lbCat.textContent = t.getAttribute("data-cat-label") || "";
+      if (lbLink) {
+        var href = t.getAttribute("data-link");
+        lbLink.style.display = href ? "" : "none";
+        if (href) {
+          lbLink.href = href;
+          lbLink.textContent = t.getAttribute("data-link-label") || "VIEW PROJECT →";
+        }
+      }
     }
     function open(tile) {
       rebuildLightboxList();
