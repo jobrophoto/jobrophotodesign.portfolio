@@ -944,44 +944,102 @@ a:hover {
 /* ==========================================================================
    9. ABOUT
    ========================================================================== */
-.bio {
+/* Hero: title + intro on the left, FIG.01 photo on the right */
+.ab-hero {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 20px;
-  padding-top: 26px;
-  border-top: 1px solid var(--line);
+  grid-template-columns: 1fr minmax(0, 0.75fr);
+  gap: 48px;
+  align-items: center;
+  padding: 40px 0;
 }
-.bio .ph {
-  height: 400px;
+.ab-hero-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
-/* Real photo in the bio frame; keeps the .ph labels on top */
-.bio-photo {
+.ab-title {
+  font-size: clamp(64px, 11vw, 180px);
+}
+.ab-lede {
+  font:
+    400 13px/1.7 "Space Mono",
+    monospace;
+  color: var(--ink);
+  max-width: 380px;
+  margin: 6px 0 0;
+}
+
+/* Framed 4:5 photo with a caption row underneath (FIG.01 / FIG.02) */
+.ab-fig {
+  margin: 0;
+}
+.ab-photo {
+  aspect-ratio: 4 / 5;
   overflow: hidden;
+  border: 1px solid var(--line);
+  background: #0d0d0d;
 }
-.bio-photo img {
+.ab-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
 }
-.bio-photo > b,
-.bio-photo > i {
-  z-index: 1;
-  background: var(--bg);
-  padding: 0 3px;
+.ab-fig figcaption {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font:
+    700 9.5px "Space Mono",
+    monospace;
+  letter-spacing: 0.14em;
+  color: var(--dim);
 }
-.bio-copy {
+
+/* Full-width section with a rule on top */
+.ab-sec {
+  padding: 40px 0;
+  border-top: 1px solid var(--line);
+}
+
+/* Bio: label column on the left, copy on the right */
+.ab-bio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr);
+  gap: 24px;
+}
+.ab-bio-copy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 18px;
 }
-.bio-copy p {
+.ab-bio-copy p {
   font:
     400 12.5px/1.8 "Space Mono",
     monospace;
   margin: 0;
 }
+.ab-bio-copy p.dim {
+  color: var(--dim);
+}
+.ab-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 6px;
+}
+.ab-stat {
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  font-size: 15px;
+  line-height: 1;
+  transition: border-color 0.3s;
+}
+.ab-stat:hover {
+  border-color: var(--pk);
+}
+
+/* What I do: three service cards (.svcn is also used on span.html) */
 .svc-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1013,13 +1071,30 @@ a:hover {
   letter-spacing: 0.2em;
   color: var(--pk);
 }
+
+/* The Path: timeline on the left, FIG.02 photo on the right */
+.ab-path {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 0.75fr);
+  gap: 48px;
+  align-items: start;
+}
+.ab-timeline {
+  margin-top: 16px;
+}
 .trow {
   display: grid;
-  grid-template-columns: 96px 1fr;
+  grid-template-columns: 72px 1fr;
   gap: 18px;
-  padding: 16px 0;
+  padding: 18px 0;
   border-top: 1px solid var(--line);
   align-items: baseline;
+}
+.trow:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.trow .yr {
+  font-size: 30px;
 }
 .trow p {
   font:
@@ -1028,29 +1103,55 @@ a:hover {
   color: var(--dim);
   margin: 6px 0 0;
 }
-.toolkit {
+
+.ab-chips {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  border: 1px solid var(--line);
-  margin-top: 32px;
-  padding: 14px 18px;
+  gap: 9px;
   flex-wrap: wrap;
+  margin-top: 16px;
 }
-.toolkit .bc {
-  flex: 1;
-  min-width: 60px;
-  height: 16px;
+
+/* Call to action band: full-bleed, slightly lighter than the page */
+.ab-cta {
+  margin: 0 calc(-1 * var(--pad));
+  padding: 56px var(--pad);
+  border-top: 1px solid var(--line);
+  background: rgba(233, 228, 216, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
 }
+.ab-cta-title {
+  font-size: clamp(36px, 7vw, 72px);
+}
+
+/* About footer: social links left, copyright right */
+.ab-footer {
+  margin-top: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
 @media (max-width: 720px) {
-  .bio {
+  .ab-hero,
+  .ab-bio,
+  .ab-path {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
-  .bio .ph {
-    height: 300px;
+  .ab-stats {
+    grid-template-columns: 1fr;
   }
   .svc-grid {
     grid-template-columns: 1fr;
+  }
+  .ab-footer {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
