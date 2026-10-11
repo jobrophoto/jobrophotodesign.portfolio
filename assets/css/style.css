@@ -443,7 +443,12 @@ a:hover {
    ========================================================================== */
 .home-hero {
   display: grid;
-  grid-template-columns: 1fr 44px clamp(340px, 42vw, 620px);
+  /* Carousel column: normally clamp(340px, 42vw, 620px). On wide screens it
+     grows to take whatever the hero type can't use — the type stops growing
+     at min(70vh, 720px) wide (see --hs below), plus 24px padding + 44px divider. */
+  grid-template-columns:
+    1fr 44px
+    max(clamp(340px, 42vw, 620px), calc(100% - 68px - min(70vh, 720px)));
   gap: 0;
   padding: 26px 0 8px;
 }
@@ -456,6 +461,28 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   gap: 2px;
+  min-width: 0;
+  padding-right: 24px;
+  /* Size the hero type from this column's width (cqi), so the wordmark
+     fills the space up to the carousel. --hs is 1% of the column, capped
+     by viewport height and a hard max so the stack never outgrows the
+     carousel. */
+  container-type: inline-size;
+  --hs: min(1cqi, 0.7vh, 7.2px);
+}
+.hero-jobro {
+  font-size: calc(var(--hs) * 36);
+}
+.hero-photo {
+  font-size: calc(var(--hs) * 22);
+}
+/* Sized so the longest word ("WEB DEVELOPMENT") fits on one line */
+.hero-type {
+  font-size: calc(var(--hs) * 8.5);
+  white-space: nowrap;
+}
+.hero-design {
+  font-size: calc(var(--hs) * 25);
 }
 .home-hero .divider {
   width: 22px;
