@@ -443,18 +443,13 @@ a:hover {
    ========================================================================== */
 .home-hero {
   display: grid;
-  /* Carousel column: normally clamp(340px, 42vw, 620px). On wide screens it
-     grows to take whatever the hero type can't use — the type stops growing
-     at min(70vh, 720px) wide (see --hs below), plus 24px padding + 44px divider. */
-  grid-template-columns:
-    1fr 44px
-    max(clamp(340px, 42vw, 620px), calc(100% - 68px - min(70vh, 720px)));
+  grid-template-columns: 1fr 44px clamp(340px, 42vw, 620px);
   gap: 0;
   padding: 26px 0 8px;
 }
 .carousel-wrap {
   position: relative;
-  height: clamp(430px, 64vh, 660px);
+  height: clamp(430px, 76vh, 820px);
 }
 .home-hero-copy {
   display: flex;
@@ -468,7 +463,7 @@ a:hover {
      by viewport height and a hard max so the stack never outgrows the
      carousel. */
   container-type: inline-size;
-  --hs: min(1cqi, 0.7vh, 7.2px);
+  --hs: min(1cqi, 0.85vh, 9.2px);
 }
 .hero-jobro {
   font-size: calc(var(--hs) * 36);
